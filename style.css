@@ -68,13 +68,18 @@ nav {
     padding-bottom: 6px;
     border-radius: 11px;
     text-decoration: none;
-  
+  }
+  .active{
+    background-color: #400711;
   }
   .nav_item_li:hover {
-    background-color: rgba(155, 45, 45, 0.232);
+    background-color: rgba(155, 45, 45, 0.473);
   }
   .company_logo {
     width: 6%;
+  }
+  .fa-solid fa-globe{
+    cursor: pointer;
   }
   .nav_button {
     margin-right: 5px;
@@ -85,19 +90,15 @@ nav {
     color:  #D9A362;
     z-index: 25;
     transition: 0.3s;
+    cursor: pointer;
   }
   .nav_button:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
   .cart_language_icon_holder {
     margin-right: 7px;
   }
-  /* .nav_button {
-    border: 1px solid #D9A362;
-    background-color: #7C2E2E;
-    padding: 8px;
-    color:  #D9A362;
-  } */
   .footer_order_btn_holder {
     display: flex;
     flex-direction: column;
@@ -238,6 +239,7 @@ nav {
     background-color: #7C2E2E;
     color: #D9A362;
     transition: 0.3s;
+    align-content: center;
   }
   .see_more_btn:hover {
     transform: scale(1.2);
@@ -257,8 +259,6 @@ nav {
     justify-content: space-around;
     
   }
- 
-
   .best_of_us_image {
     width: 28%;
     padding: 10px;
@@ -302,20 +302,33 @@ nav {
 
 
   /* <-- --- ! - | YOU DIDN'T KNOW PAGE | - ! --- --> */
-  
-  /* I MAKE THEM FLEX SO I CAN CENTER THE DIV ON THE PAGE */
+  /* New code */
+.DUK_title_holder{
+  color: #D9A362;
+  border: 1px solid #D9A362;
+  border-style: solid;
+  width: 700px;
+  margin:auto;
+}
+.legend{
+
+  text-align: center;
+}
+/*   
+  I MAKE THEM FLEX SO I CAN CENTER THE DIV ON THE PAGE
   .DUK_page_heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+
   }
 
   .main_section_DUKpage {
     margin-top: 55px;
   }
 
-  /* I MAKE THEM FLEX SO I CAN CENTER THE DIV ON THE PAGE */
+  /* I MAKE THEM FLEX SO I CAN CENTER THE DIV ON THE PAGE 
   .DUK_page_small_heading_holder {
     display: flex;
     flex-direction: column;
@@ -330,7 +343,7 @@ nav {
     height: 0,1%;
     margin-top: -20px;
     margin-bottom: -60px;
-  }
+  } */
 
   /* <-- | FIRST FACT PICTURE AND TEXT HOLDER | --> */
  
@@ -483,7 +496,7 @@ nav {
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: space-around;
+    
      width: 28%;
      border: 1px solid #D9A362;
  }
@@ -498,7 +511,7 @@ nav {
 .DUK_card_text_holder {
   border: 1px solid #D9A362;
   width: 100%;
-  padding: 58px;
+  
   background-color: #7C2E2E;
 }
  
@@ -625,6 +638,10 @@ nav {
      margin-top: 20px;
      margin-bottom: 50px;
      border-radius: 15px;
+     }
+     .explanation_text_OurWork{
+      text-align: center;
+      padding-bottom: 50px;
      }
      .first_pic_containe {
       display: flex;
