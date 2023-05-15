@@ -78,7 +78,7 @@ nav {
   .company_logo {
     width: 6%;
   }
-  .fa-solid fa-globe{
+  .fa-globe{
     cursor: pointer;
   }
   .nav_button {
@@ -102,6 +102,12 @@ nav {
   .footer_order_btn_holder {
     display: flex;
     flex-direction: column;
+  }
+  .lannguageIcon{
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
   }
 
      /* <-- --- ! - | HOME PAGE | - ! --- --> */
@@ -270,16 +276,16 @@ nav {
     cursor: pointer;
     transform: scale(1.1);
   }
-  
-
   .home_page_icons_section {
-    margin-top: 70px;
+    margin-top: 100px;
     background-color: #7C2E2E;
   }
   .icons_text_holder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height:150px;
+    align-items: center;
   }
   .icon_item {
     display: flex;
@@ -294,8 +300,36 @@ nav {
   padding-top: 15px;
   align-content: center;
  }
+ .i{
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+ }
+ .fa-beat {
+  animation: heartbeat 2s infinite;
+}
+ @keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.fa-paw{
+  animation: fade 2s infinite;
+}
+@keyframes fade {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
   .icon_text {
-    width: 60%;
+    font-size: 17pt;
     text-align: center;
   }
 
@@ -311,8 +345,13 @@ nav {
   margin:auto;
 }
 .legend{
-
+  font-size:xx-large;
   text-align: center;
+}
+.DUK_text_topofthepage{
+  text-align: center;
+  font-size: 17pt;
+  line-height: 26pt;
 }
 /*   
   I MAKE THEM FLEX SO I CAN CENTER THE DIV ON THE PAGE
@@ -496,8 +535,7 @@ nav {
      display: flex;
      flex-direction: column;
      align-items: center;
-    
-     width: 28%;
+     width: 29%;
      border: 1px solid #D9A362;
  }
  
@@ -511,18 +549,15 @@ nav {
 .DUK_card_text_holder {
   border: 1px solid #D9A362;
   width: 100%;
-  
   background-color: #7C2E2E;
 }
  
  .DUK_card_text_holder {
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
-     height: 60%;
-     width: 70%;
+     height: 40%;
+     width: 90%;
      text-align: center; 
- 
  }
          
 
@@ -642,6 +677,7 @@ nav {
      .explanation_text_OurWork{
       text-align: center;
       padding-bottom: 50px;
+      font-size: 18pt;
      }
      .first_pic_containe {
       display: flex;
@@ -1160,10 +1196,6 @@ nav {
 }
 
    /* FOOTER */
- 
-   .some_icon{
-    width: 7%;
-   }
 .page_footer {
     background-color: black;
     margin-top: 90px;
@@ -1183,7 +1215,8 @@ nav {
     margin-bottom: 60px;
 }
 .footer_logo {
-    width: 7%;
+    width: 30%;
+    background-color: #D9A362;
 }
 .left_sec_footer {
     display: flex;
@@ -1207,11 +1240,11 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
-.some_icons {
+ .some_icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} 
 
 
      /* <-- --- ! - | BOOKING PAGE 1 | - ! --- --> */
